@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rishav | Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/src/assets/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Rishav | Portfolio</title>
+  <style>
+    .animate__animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+
+    .animate__delay-1s {
+      animation-delay: 1s;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
     <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header Section -->
+    <header class="bg-blue-500 py-4 text-white">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-semibold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Portfolio</h1>
+            <ul class="space-x-4">
+                <li><a href="#home" class="hover:text-red-300">&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#about" class="hover:text-red-300">About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#portfolio" class="hover:text-red-300">Portfolio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#contact" class="hover:text-red-300">Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-8 px-4">
+        <!-- Home Section -->
+        <section id="home" class="bg-blue-200 py-16 text-center rounded-lg shadow-lg">
+            <div>
+                <h1 class="text-4xl font-semibold mb-4 animate__animated animate__fadeIn animate__delay-1s">Welcome to My Portfolio</h1>
+                <p class="text-lg">Web Developer | Designer | Creative Thinker</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-white py-16 text-center mt-8 rounded-lg shadow-lg">
+            <div>
+                <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+                <p class="text-lg">I am a passionate web developer and designer with a focus on creating beautiful and functional websites.</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="bg-gray-100 py-16 text-center mt-8 rounded-lg shadow-lg">
+            <div>
+                <h2 class="text-3xl font-semibold mb-4">Portfolio</h2>
+                <!-- Portfolio items go here -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white py-16 text-center mt-8 rounded-lg shadow-lg">
+            <div>
+                <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
+                <p class="text-lg">Feel free to reach out to me at <a href="mailto:your@email.com">your@email.com</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-4 text-center">
+        <p>&copy; 2023 Rishav</p>
+    </footer>
+</body>
+</html>
+
+
+  </div>
+</body>
+
 </html>
