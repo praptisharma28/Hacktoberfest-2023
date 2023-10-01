@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindAPic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+
+<body>
+    <section>
+        <h1 class="font-effect-shadow-multiple">
+            FIND YOUR PICTURE HERE !
+        </h1>
+        
+        <div class="center">
+            <div class="details">
+                <label class="name">ENTER TEXT YOU WANT TO CONVERT INTO A PICTURE:</label>
+
+                <br>
+                <input type="text" id="nameid">
+            </div>
+            <br>
+
+            <Center><div class="img">
+                <img src="https://source.unsplash.com/400x300/?welcome written" class="imgchange">
+            </div></Center>
+            <br>
+            <center><button>Click here</button></center>
+
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                const name = $('#nameid').val();
+                alert(name);
+                $('.imgchange').attr('src', `https://source.unsplash.com/400x300/?${name}`);
+                const b = $('.imgchange');
+                console.log(b);
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>
